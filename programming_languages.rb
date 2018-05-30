@@ -14,7 +14,6 @@ languages.each do |symbol, language|
           new_hash[language][type] = value
         end
         new_hash[language][:style] << symbol
-        end
       end
     end
   end
