@@ -7,13 +7,13 @@ languages.each do |symbol, language|
       types.each do |type, value|
         if new_hash[language].nil?
           new_hash[language]={}
-        
-        elsif new_hash[language][:style].nil?
+        end 
+        if new_hash[language][:style].nil?
           new_hash[language][:style] = []
-        
+        end 
         new_hash[language][:style] << symbol
         
-        elsif new_hash[language][type].nil?
+        if new_hash[language][type].nil?
           new_hash[language][type] = value
         end
       end
