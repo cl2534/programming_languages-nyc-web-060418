@@ -3,7 +3,7 @@
 new_hash = {}
 
 languages.each do |symbol, language|
-    language.each do |language, types|
+    language.each do |lang, types|
       types.each do |type, value|
         if new_hash[language].nil?
           new_hash[language]={}
@@ -12,7 +12,6 @@ languages.each do |symbol, language|
           new_hash[language][:style] = []
         end 
         new_hash[language][:style] << symbol
-        
         if new_hash[language][type].nil?
           new_hash[language][type] = value
         end
