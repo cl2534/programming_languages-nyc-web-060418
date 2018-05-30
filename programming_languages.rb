@@ -2,8 +2,8 @@
 
 new_hash = {}
 
-languages.each do |symbol, language|
-    language.each do |lang, types|
+languages.each do |symbol, program_language|
+    program_language.each do |language, types|
       types.each do |type, value|
         if new_hash[language].nil?
           new_hash[language]={}
